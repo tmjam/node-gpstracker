@@ -11,6 +11,7 @@ server.trackers.on("connected", function(tracker){
     tracker.on("position", function(position){
         console.log("tracker {" + tracker.imei +  "}: lat", 
                             position.lat, "lng", position.lng);
+        console.log("Position", position);
     });
 
     tracker.trackEvery(10).seconds();

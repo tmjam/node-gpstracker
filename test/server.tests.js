@@ -110,6 +110,9 @@ describe("gps tracker server", function() {
         position.imei.should.eql("787878");
         position.lat.should.eql(-31.385407);
         position.lng.should.eql(-64.163635);
+        position.direction.should.eql(0);
+        position.news.should.eql('SW');
+        position.isValid.should.eql(true);
         position.date.getTime().should.eql(new Date(2012, 8, 8, 9, 7).getTime());
         position.speed.should.eql(185);
         s.end();
